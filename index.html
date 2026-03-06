@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast — Weather</title>
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="sky-bg"></div>
+    <div class="stars"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <header>
+        <div class="hdr">
+            <div class="logo">SkyCast<small>Weather Intelligence</small></div>
+            <div class="hdr-search">
+                <div class="hdr-sbox">
+                    <span class="hdr-si">🔍</span>
+                    <input type="text" id="cityInput" placeholder="Search city or zip code…"
+                        onkeydown="if(event.key==='Enter')fetchWeather()">
+                </div>
+                <button class="hbtn" onclick="fetchWeather()">Search</button>
+                <button class="hloc" title="Detect location" onclick="getLocation()">📍</button>
+            </div>
+            <div class="hdr-right">
+                <div class="utog">
+                    <button class="ubtn on" id="btnC" onclick="setUnit('metric')">°C</button>
+                    <button class="ubtn" id="btnF" onclick="setUnit('imperial')">°F</button>
+                </div>
+                <div class="clkw">
+                    <div class="ct" id="clock">--:--</div>
+                    <div class="cd" id="dateDisp">---</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app">
+        <div id="locBanner" style="display:none" class="locbar">
+            <div class="dot"></div>
+            <span id="locText">Detecting your location…</span>
+        </div>
+        <div id="content">
+            <div class="sbox">
+                <div class="spin"></div>
+                <div class="st2">Detecting your location…</div>
+                <div class="sm">Aether is fetching real-time weather for your location.</div>
+            </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
