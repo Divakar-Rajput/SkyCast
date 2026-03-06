@@ -1,8 +1,7 @@
-# 🌤️ Aether Weather
+# 🌤️ SkyCast Weather
 
 <div align="center">
 
-![Aether Weather Banner](https://img.shields.io/badge/Aether-Weather%20Intelligence-4fc3f7?style=for-the-badge&logo=cloud&logoColor=white)
 
 **A stunning, fully-featured weather intelligence app — built in a single HTML file.**
 
@@ -21,7 +20,7 @@
 
 ## ✨ Overview
 
-**Aether** is a real-time weather intelligence web app that feels like a native app — all delivered in a single, zero-dependency HTML file. It auto-detects your location on load, renders a Google-style scrollable temperature graph, shows a detailed 7-day forecast, and wraps everything in a dark glassmorphism UI with animated stars and floating orbs.
+**SkyCast** is a real-time weather intelligence web app that feels like a native app — all delivered in a single, zero-dependency HTML file. It auto-detects your location on load, renders a Google-style scrollable temperature graph, shows a detailed 7-day forecast, and wraps everything in a dark glassmorphism UI with animated stars and floating orbs.
 
 > 🚀 **One file. No build tools. No npm. Just open in a browser.**
 
